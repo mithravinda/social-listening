@@ -9,6 +9,7 @@ class Header extends React.Component{
     signIn = (currentuser) => {
         if(currentuser){
             this.setState({name:currentuser.Ab.w3.ofa});
+
         }
         else{
             this.setState({name:''});

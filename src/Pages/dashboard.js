@@ -12,33 +12,34 @@ class Dashboard extends Component {
     }
 
     componentDidMount(){
-        if(this.statecompany){
+        if(this.state.company){
             axios.get('http://hackton.us-e2.cloudhub.io/api/'+ this.state.company).then((data) => {
                 console.log(data);
+                this.setState({posts:data})
             })
         }
     }
 
     renderPosts = () => {
-        return (
-            <div className="ui card">
-                <div className="content">
-                <div className="header">Enquero</div>
-                </div>
-            </div>
-        );
-    }
-
-    componentDidMount() {
-        axios.get('').then((data)=>{
-            this.setState({posts: data})
-        })
+        if(this.state.posts){
+        return this.state.posts.map((row)=> {
+            return(
+                <div className="ui card">
+                    <div className="content">
+                    <div className="header">{row.name}</div>
+                    <div className="description">{row.description}</div>
+                    </div>
+                </div>)
+         } );}
+         else{
+             return null
+         }
     }
 
     render() { 
         return ( 
             <div className="ui cards">
-                {this.renderPosts}
+                {this.renderPosts()}
             </div>
          );
     }

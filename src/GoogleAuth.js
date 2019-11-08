@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { signIn,signOut } from './actions';
 import Warning from './Pages/Warning/Warning';
+import history from './history';
 
 class GoogleAuth extends React.Component{
 
@@ -22,10 +23,12 @@ class GoogleAuth extends React.Component{
         if(isSignedIn){
             this.props.signIn(this.auth.currentUser.get().getId());
             this.props.getUser(this.auth.currentUser);
+            history.push('/api/initialize/'+this.auth.currentUser.get().getId());
         }
         else {
             this.props.signOut();
             this.props.getUser();
+            history.push('/');
         }
     }
 

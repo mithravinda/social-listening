@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
+import history from '../history';
 
 const json = {
     "Enterprises": [
@@ -37,6 +38,7 @@ class Search extends Component {
         // else {
         //     this.setState({warning:true})
         // }
+        history.push('/api/dashboard/' + this.state.searchTerm);
         this.props.searchTerm(this.state.searchTerm);
     }
 

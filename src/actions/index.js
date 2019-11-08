@@ -1,6 +1,6 @@
 import { 
     SIGN_IN, 
-    SIGN_OUT } from './types';
+    SIGN_OUT,SEARCH_TERM } from './types';
 
 export const signIn = (userId) => {
     return {
@@ -12,5 +12,12 @@ export const signIn = (userId) => {
 export const signOut = () => {
     return {
         type: SIGN_OUT
+    }
+}
+
+export const searchTerm = (searchTerm) => {
+    return {
+        type: SEARCH_TERM,
+        payload: searchTerm
     }
 }
