@@ -1,0 +1,36 @@
+.header-header {
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+}
+
+.header-img h3{
+    display: inline-flex;
+    margin-top: 40px;
+    color: whitesmoke;
+}
+.header-img img {    
+    height: 80px;
+    margin: 10px;
+    float: left;
+}
+
+.header-nav-ul {
+    display: inline-flex;
+    float: right;
+}
+
+.ui.inverted.blue.button,
+.header-nav-li a{
+    float: right;
+    margin:10px 30px 10px 10px;
+    font-size: medium;
+}
+
+.header-nav-li a:hover{
+    color: #54C8FF;
+}
+
+.header-nav-li a{
+    color: whitesmoke;  
+}

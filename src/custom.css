@@ -1,0 +1,299 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4px rgba(160, 159, 159, 0.8);
+  box-shadow: inset 0 0 4px rgba(160, 159, 159, 0.8);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 4px rgba(131, 131, 131, 0.8);
+  box-shadow: inset 0 0 4px rgba(131, 131, 131, 0.8);
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.amc-holding-chart {
+  min-width: 310px;
+  height: 320px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.datatable-body {
+  font-size: 0.6rem;
+}
+
+.datatable-header {
+  font-size: 0.7rem;
+  padding-bottom: 2px !important;
+  padding-top: 2px !important;
+  cursor: pointer;
+}
+
+.datatable-search {
+  font-size: 0.7rem;
+}
+
+.react-bs-table-search-form .form-control {
+  font-size: 0.7rem !important;
+}
+
+.react-bs-table-pagination .btn {
+  font-size: 0.6rem;
+}
+
+.pagination {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.react-bs-table-pagination p {
+  font-size: 0.6rem;
+  display: inline;
+}
+
+.search-input {
+  font-size: 16px;
+  border: 1px solid #efeeee !important;
+}
+
+.example {
+  padding: 0 25px;
+}
+
+main.container-fluid {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+code {
+  padding: 0.2em 0.5em;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+
+.menu {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #cccccc;
+  z-index: 100;
+  background: #fefefe;
+  max-height: 300px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.item {
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.item-highlighted {
+  color: white;
+  background-color: #4095bf;
+}
+
+.item-header {
+  background-color: #eeeeee;
+  color: #454545;
+  font-weight: bold;
+}
+
+ul.navbar-nav li {
+  padding: 10px;
+}
+
+ul.navbar-nav li.active {
+  background: #eee;
+}
+
+ul.navbar-nav li a {
+  color: #999a9e;
+}
+
+ul.navbar-nav li.active a {
+  color: #4095bf;
+}
+
+.search-box input {
+  border-radius: 0.35rem 0 0 0.35rem;
+}
+
+.width-14 {
+  width: 14rem;
+}
+
+.scheme-holdings tbody > tr > td:first-child {
+  width: 14rem;
+}
+
+.scatter-chart,
+.performance-chart {
+  height: 480px;
+}
+
+.short-string {
+  white-space: nowrap;
+  width: 100%; /* IE6 needs any width */
+  overflow: hidden; /* "overflow" value must be different from  visible"*/
+  -o-text-overflow: ellipsis; /* Opera < 11*/
+  text-overflow: ellipsis; /* IE, Safari (WebKit), Opera >= 11, FF > 6 */
+}
+
+.card h6 {
+  white-space: nowrap;
+  overflow: hidden; /* "overflow" value must be different from  visible"*/
+  -o-text-overflow: ellipsis; /* Opera < 11*/
+  text-overflow: ellipsis; /* IE, Safari (WebKit), Opera >= 11, FF > 6 */
+}
+
+.center-vertical {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+
+.center-horizontal {
+  margin: auto;
+  max-height: 100%;
+}
+
+.add-schemes-btn {
+  margin-left: -1rem;
+}
+
+.flash-card.card {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  /* border-top: 0.5rem solid #539e9e; */
+}
+
+.flash-card .card-header {
+  border-bottom: none;
+  color: #363636;
+  font-size: 0.65rem;
+  font-weight: 600;
+  height: 4rem;
+}
+
+.flash-card .card-body {
+  padding-bottom: 0px;
+}
+
+.flash-card .returns-date,
+.card-label {
+  font-size: 0.5rem;
+}
+
+.flash-card .scheme-category {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.flash-card .close {
+  background-color: #a70e0e;
+  width: 2rem !important;
+  height: 2rem !important;
+  position: relative;
+  margin-top: -0.7rem;
+  margin-right: -1.2rem;
+  color: #fff;
+  border: 2px solid #b1afaf;
+}
+
+.chart-area {
+  height: auto;
+  min-height: 350px;
+}
+
+.amc-full-name {
+  color: #bbb;
+  font-weight: 100;
+}
+
+.card-icon {
+  width: 3rem;
+}
+.card-value {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.amc-card-section {
+  border-right: 1px solid #efeeee;
+}
+
+.select-item {
+  font-family: inherit !important;
+  font-size: 0.75rem !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .box .text-xs {
+    font-size: 0.6rem;
+    padding-top: 6px;
+  }
+  .box .h5 {
+    font-size: 0.9rem;
+  }
+  .react-bs-table-pagination .total {
+    display: none;
+  }
+
+  .react-bs-table-container table {
+    width: 558px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .box .text-xs {
+    font-size: 0.6rem;
+  }
+
+  .card-body .scheme-holdings {
+    height: 360px;
+  }
+
+  .chart-area {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  .react-bs-table table {
+    width: 558px;
+  }
+  .amc-holding-chart {
+    min-width: 100px !important;
+  }
+
+  .add-schemes-btn {
+    margin-left: 0rem;
+  }
+}
