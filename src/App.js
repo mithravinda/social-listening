@@ -20,6 +20,7 @@ import Search from './Search/search';
 
 class App extends React.Component{
   render(){
+    
   return (
     <div className="ui container">
       <Router history={history}>
