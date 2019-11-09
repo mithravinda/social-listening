@@ -6,44 +6,44 @@ class Menu extends Component {
 
   showMenuList = () => {
     this.setState({ showMenuList: !this.state.showMenuList });
+
   };
 
   render() {
     const menuList = (
-      <h1 style={{ float: "right", color: "#eeeeee" }}>
-        <div>
-          <h1>
-            <Link
-              to={`/api/dashboard/${this.props.searchTerm}`}
-              onClick={this.showMenuList}
-            >
-              DashBoard
-            </Link>
-          </h1>
+        <h1>
+        <div className="wrapper" style={{ float: "right", color: "#eeeeee", height:'1000px'}}>
+        <nav id="sidebar">
+            <ul className="list-unstyled components">
+                <li className="active">
+                    <Link
+                    to={`/api/dashboard/${this.props.searchTerm}`}
+                    onClick={this.showMenuList}
+                    style={{color:'#008080', textDecoration:'none'}}
+                    >
+                    DashBoard
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/api/compare"onClick={this.showMenuList} style={{color:'#008080', textDecoration:'none'}}>Compare</Link>
+                </li>
+                <li>
+                    <Link to="/api/searchhistory" onClick={this.showMenuList} style={{color:'#008080', textDecoration:'none'}}>
+                    Search History
+                    </Link>
+                </li>
+            </ul>
+        </nav>
         </div>
+        </h1>
 
-        <div>
-          <h1>
-            <Link to="/api/compare"onClick={this.showMenuList}>Compare</Link>
-          </h1>
-        </div>
-
-        <div>
-          <h1>
-            <Link to="/api/searchhistory" onClick={this.showMenuList}>
-              {" "}
-              Search History
-            </Link>
-          </h1>
-        </div>
-      </h1>
     );
     return (
-      <div>
+      <div id="overlay">
         <div style={{ float: "right", color: "#eeeeee" }}>
           <img
-            className=""
-            src="../Images/download.png"
+            height="50px"
+            src="https://icon-library.net/images/three-line-menu-icon/three-line-menu-icon-11.jpg"
             alt="Hamburger Icon"
             onClick={this.showMenuList}
           ></img>

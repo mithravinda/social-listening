@@ -44,8 +44,8 @@ class Search extends Component {
 
     render() { 
         return ( 
-            <div>
-                <div className="ui search">
+            <div><center>
+                <h1><div className="ui search">
                     <div className="ui icon input">
                         <input className="prompt" type="text" 
                         placeholder="Company Name" 
@@ -53,10 +53,11 @@ class Search extends Component {
                         style={{float:'right'}} />
                         <i className="search icon"></i>                    
                     </div>
-                    <button className="ui primary button" onClick={this.searchResults}>Search</button>
+                    <button className="ui teal button" onClick={this.searchResults} style={{height:'55px',width:'150px', margin:'7px' }}><h1>Search</h1></button>
                     {this.state.warning? <p style={{color:'red'}}>Please enter Company's Name to search</p>:null}
-                </div>
-                
+                    
+                </div></h1>
+                </center>
             </div>
          );
     }

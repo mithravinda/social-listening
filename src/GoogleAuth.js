@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { signIn,signOut } from './actions';
 import Warning from './Pages/Warning/Warning';
 import history from './history';
-
+import './googleauth.css';
 class GoogleAuth extends React.Component{
-
+    
     componentDidMount(){        
         window.gapi.load('client:auth2', () =>{
             window.gapi.client.init({
@@ -20,6 +20,9 @@ class GoogleAuth extends React.Component{
     }
 
     onAuthChange = (isSignedIn) => {
+        const loading = <div class="ui active dimmer">
+        <div class="ui text loader">Loading</div>
+      </div>;
         if(isSignedIn){
             this.props.signIn(this.auth.currentUser.get().getId());
             this.props.getUser(this.auth.currentUser);
@@ -53,15 +56,18 @@ class GoogleAuth extends React.Component{
             
         else    
             return (
-                <button onClick = {this.onSignInClick} className="ui red google button">
+                <button onClick = {this.onSignInClick} className="ui red google button" >
                     <i className="google icon"/>
-                        Sign In with Google
+                        <h1>Sign In with Google</h1>
                 </button>
+
             );
     }
 
     render(){
-        return <div>{this.renderAuthButton()}</div>
+        return (<div>
+            {this.renderAuthButton()}
+            </div>);
     }
 }
 

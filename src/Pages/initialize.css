@@ -1,0 +1,19 @@
+.ui.container{
+    margin:35px;
+    padding: 35px;
+    background-color: thistle;
+}
+
+.seven.wide.column{
+    float:right;
+    margin-left: 150px;
+}
+
+.ui.cards{
+    margin: 135px;
+}
+
+.ui.grid{
+    margin: 35px;
+    padding: 35px;
+}
