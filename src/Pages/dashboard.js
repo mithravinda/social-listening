@@ -87,22 +87,17 @@ class Dashboard extends Component {
     }
   }
 
-  renderPosts = handle => {
+  renderPosts = () => {
     if (this.state.posts) {
       return this.state.posts.map(row => {
-        return row.handle === "handle" ? (
-          <h1>
-            <div className="ui grid">
-              <div className="five wide column"></div>
-              <div className="ui card">
-                <div className="content">
-                  <div className="header">{row.description}</div>
-                  <div className="description">{row.description}</div>
-                </div>
-              </div>
+          return (
+          <div className="ui card">
+            <div className="content">
+              <div className="header"><h1>{row.description}</h1></div>
+              <div className="description"><h2>{row.description}</h2></div>
             </div>
-          </h1>
-        ) : null;
+            </div>
+        ) 
       });
     } else {
       return null;
@@ -156,7 +151,7 @@ class Dashboard extends Component {
       return (
         <h1>
           <div>
-            <div className={`ui ${color} progress`} style={{width: '74%'}}>
+            <div className={`ui ${color} progress`} style={{width: '100%'}}>
               <div className="bar"></div>
             </div>
 
@@ -218,17 +213,23 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-        <div className="ui cards"></div>
         <div className="ui grid" style={{ margin: "15px" }}>
-            {this.warning? <p>Please Enter Comapny's Name</p>:
-            <div>
+            
+            <div className="ui cards">
                 <div className="five wide column">{this.renderFacebook()}</div>
                 <div className="five wide column">{this.renderTwitter()}</div>
                 <div className="five wide column">{this.renderGlassdoor()}</div>
             </div>
-            }          
+            </div>
+        <div className = "posts">
+          <div className="ui grid">
+            <div className="ui cards">
+            <div className="five wide column">{this.renderPosts()}</div>
+            </div>
         </div>
-      </div>
+        </div>
+        </div>
+
     );
   }
 }

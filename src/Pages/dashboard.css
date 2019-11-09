@@ -2,3 +2,18 @@
     height: 210px;
 }
 
+.ui.grid{
+    display: inline;
+}
+
+.ui.cards{
+    padding: 15px;
+}
+
+.five.wide.column{
+    margin: 15px;
+}
+
+.posts.ui.grid.ui.cards{
+    display: inline;
+}
